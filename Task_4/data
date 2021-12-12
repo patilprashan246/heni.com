@@ -1,0 +1,39 @@
+
+Task 1:
+-------
+inner join:
+INNER JOIN is a type of join that returns all rows from both the tables where the key record of one table is equal to the key records of another table.
+
+left join:
+The LEFT JOIN is a type of join that returns all rows from the left table, and the matching rows from the right table.
+
+right join:
+The RIGHT JOIN is a type of join that returns all rows from the right table, and the matching rows from the left table.
+
+full join:
+The FULL JOIN combines the results of both left and right outer joins. The joined table will contain all records from both the tables and fill in NULLs for missing matches on either side.
+
+
+Task 2:
+-------
+1.
+SELECT flights.arr_time, flights.origin, flights.dest, airlines.name
+FROM flights
+INNER JOIN airlines ON flights.carrier = airlines.carrier
+
+2.
+SELECT flights.arr_time, flights.origin, flights.dest, airlines.name
+FROM flights
+INNER JOIN airlines ON flights.carrier = airlines.carrier
+WHERE airlines.name LIKE '%JetBlue%'
+
+3.
+SELECT origin, count(origin)
+FROM flights
+GROUP BY origin
+
+4.
+SELECT origin, count(origin)
+FROM flights
+GROUP BY origin
+HAVING COUNT(origin) > 10000
