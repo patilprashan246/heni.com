@@ -1,11 +1,11 @@
-# HENI tech test
+# HENI.com
 
 ## Installation
 
-tested with Python 3.7.3+
+Python 3.6+
 - create a virtual environment
-- clone repo `git clone https://github.com/ahmadRazaa/HENItest.git`
-- move to project directory `cd HENItest`
+- clone repo `git clone https://github.com/patilprashan246/HENItest.git`
+- move to project directory `cd heni.com`
 - install dependencies by `pip install -r requirements.txt`
 
 
@@ -14,8 +14,8 @@ tested with Python 3.7.3+
 code for parsing `candidateEvalData > webpage.html`HTML can be found in dir `task1`.
 to execute follow:
 
-- `cd task1`
-- `python3 parsing_html.py`
+- `cd Task_1`
+- `python3 task1_parsehtml.py`
 
 ## Task 2
 
@@ -48,7 +48,7 @@ r'(\d+)\s*by\s*(\d+)\s*in'
 
 ## Task 3
 
-web crawler to crawl gallery's listing can be found under dir `task3 > bearspacescraper > bearspacescraper > spiders > bearspace_spider.py`
+web crawler to crawl gallery's listing can be found under dir `Task_3 > bearspacescraper > bearspacescraper > spiders > bearspace_spider.py`
 
 project contains two spiders:
 - bearspace-parse
@@ -70,7 +70,7 @@ scrapy crawl bearspace-crawl -o data.csv
 
 ## Task 4
 
-Following are the SQL queries and joins asked, can also be found under dir `task4` 
+Following are the SQL queries and joins asked, can also be found under dir `Task_4` 
 
 #### Task 4.1:
 
